@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="packageController.controllerCadTarefa">
+   <children>
+      <Pane prefHeight="720.0" prefWidth="1080.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff9f31" height="85.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1080.0" />
+            <Label layoutX="41.0" layoutY="28.0" text="Gerenciamento de Tarefas" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnCadUsuario" layoutX="611.0" layoutY="31.0" mnemonicParsing="false" onAction="#btnCadUsuario" style="-fx-background-color: #ff9f31;" text="Cadastro de usuários" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCadTarefas" layoutX="770.0" layoutY="31.0" mnemonicParsing="false" onAction="#btnCadTarefas" style="-fx-background-color: #ff9f31;" text="Cadastro de tarefas" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnGerTarefas" layoutX="917.0" layoutY="31.0" mnemonicParsing="false" onAction="#btnGerTarefas" style="-fx-background-color: #ff9f31;" text="Gerenciar tarefas" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCadTarefa" layoutX="59.0" layoutY="468.0" mnemonicParsing="false" onAction="#btnCadTarefa" prefHeight="25.0" prefWidth="96.0" style="-fx-background-color: #ff9f31; -fx-text-fill: FFFFFF;" text="Cadastrar" />
+            <Label layoutX="53.0" layoutY="315.0" text="Usuario">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="choiceUser" layoutX="53.0" layoutY="335.0" prefWidth="150.0" />
+            <Label layoutX="53.0" layoutY="382.0" text="Nivel">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="choiceNivel" layoutX="53.0" layoutY="402.0" prefWidth="150.0" />
+         </children>
+      </Pane>
+      <Label layoutX="51.0" layoutY="128.0" text="Cadastro de Tarefas">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="186.0" text="Descrição">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textDescricao" layoutX="51.0" layoutY="206.0" prefHeight="25.0" prefWidth="205.0" />
+      <Label layoutX="51.0" layoutY="250.0" text="Setor">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textSetor" layoutX="51.0" layoutY="270.0" prefHeight="25.0" prefWidth="205.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="packageController.controllerMain">
+   <children>
+      <Pane prefHeight="720.0" prefWidth="1080.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff9f31" height="85.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1080.0" />
+            <Label layoutX="41.0" layoutY="28.0" text="Gerenciamento de Tarefas" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnCadUsuario" layoutX="611.0" layoutY="31.0" mnemonicParsing="false" onAction="#btnCadUsuario" style="-fx-background-color: #ff9f31;" text="Cadastro de usuários" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCadTarefas" layoutX="770.0" layoutY="31.0" mnemonicParsing="false" onAction="#btnCadTarefas" style="-fx-background-color: #ff9f31;" text="Cadastro de tarefas" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnGerTarefas" layoutX="917.0" layoutY="31.0" mnemonicParsing="false" onAction="#btnGerTarefas" style="-fx-background-color: #ff9f31;" text="Gerenciar tarefas" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Button>
+            <Label layoutX="10.0" layoutY="174.0" text="A fazer ">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="370.0" layoutY="176.0" text="Fazendo">
+               <font>
+                  <Font name="Segoe UI" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="723.0" layoutY="176.0" text="Pronto">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <VBox layoutX="5.0" layoutY="193.0" prefHeight="523.0" prefWidth="354.0" style="-fx-background-color: black;">
+               <children>
+                  <ScrollPane fx:id="scrolAfazer" prefHeight="530.0" prefWidth="354.0" style="-fx-border-color: FFFFFF;">
+                     <content>
+                        <GridPane fx:id="gridAFazer">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                        </GridPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </VBox>
+            <VBox layoutX="361.0" layoutY="193.0" prefHeight="523.0" prefWidth="354.0" style="-fx-background-color: black;">
+               <children>
+                  <ScrollPane fx:id="scrolFazendo" prefHeight="526.0" prefWidth="354.0" style="-fx-border-color: FFFFFF;">
+                     <content>
+                        <GridPane fx:id="gridFazendo">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                        </GridPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </VBox>
+            <VBox layoutX="717.0" layoutY="193.0" prefHeight="523.0" prefWidth="354.0" style="-fx-background-color: black;">
+               <children>
+                  <ScrollPane fx:id="scroolPronto" prefHeight="554.0" prefWidth="354.0" style="-fx-border-color: FFFFFF;">
+                     <content>
+                        <GridPane fx:id="gridPronto">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                        </GridPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

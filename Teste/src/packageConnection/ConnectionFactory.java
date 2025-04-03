@@ -10,7 +10,7 @@ public class ConnectionFactory {
 	private final static String Driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
 	private final static String URL = "jdbc:sqlserver://localhost:57725;encrypt=false;databaseName=Teste";
 	private final static String User = "sa";
-	private final static String Password = "2jv42pm5";
+	private final static String Password = "Senailab05";
 	
 	public static Connection getConnection() {
 		

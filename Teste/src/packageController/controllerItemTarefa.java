@@ -69,7 +69,7 @@ public class controllerItemTarefa implements Initializable{
     	TarefaDAO tarefaDAO = new TarefaDAO();
     	
     	Alert mensagemDeAviso = new Alert(Alert.AlertType.CONFIRMATION);
-    	mensagemDeAviso.setContentText("Deseja realmente alterar o Stats da tarefa? ");
+    	mensagemDeAviso.setContentText("Deseja realmente alterar o Status da tarefa? ");
  
     	Optional<ButtonType> resultado = mensagemDeAviso.showAndWait();
 
